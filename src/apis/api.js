@@ -40,6 +40,8 @@ export const get = async (url, params) => {
 
 // Function to make POST requests
 export const post = async (url, data) => {
+  console.log("kjnjink");
+  console.log(data)
   try {
     // console.log('================POST API LOGS===================');
     // console.info({
@@ -52,6 +54,7 @@ export const post = async (url, data) => {
     const response = await axiosInstance.post(url, data);
     return response.data;
   } catch (error) {
+    console.log(error.response.data);
     if (error.response && error.response.data && error.response.data.message) {
       // console.log('===================API ERROR=============================');
       // console.error({
@@ -66,6 +69,7 @@ export const post = async (url, data) => {
       // console.log('================== NETWORK ERROR =============================');
       // console.error(error);
       // console.log('===============================================');
+      console.log("An error occurred during the request.");
       throw new Error('An error occurred during the request.');
     }
   }

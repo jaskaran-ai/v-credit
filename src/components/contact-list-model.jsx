@@ -37,7 +37,7 @@ const ContactList = ({ contacts, onSelect, onscroll }) => {
           lineHeight: Platform.OS === 'android' ? 16 : 0,
           paddingBottom: 10,
         }}
-        placeholder="Search Customer Name or Phone"
+        placeholder="Search Customer Name or Phonee"
         className="h-12 border-2 border-slate-200 bg-white"
       />
 
