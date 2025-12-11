@@ -1,7 +1,8 @@
 {
   "expo": {
+    "owner": "sandeep51480",
     "name": "My Credit Book",
-    "slug": "CASPRO",
+    "slug": "v-credit",
     "version": "16.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,7 +12,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.webcooks.mycreditbook"
@@ -24,7 +27,12 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.webcooks.mycreditbook",
-      "permissions": ["READ_CONTACTS", "WRITE_CONTACTS"],
+      "permissions": [
+        "android.permission.READ_CONTACTS",
+        "android.permission.WRITE_CONTACTS",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA"
+      ],
       "versionCode": 16
     },
     "web": {
@@ -53,7 +61,7 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "10c44983-617a-4f18-9227-ce300c770980"
+        "projectId": "c8004d93-ba74-42eb-9ef0-03a1bb97ad57"
       }
     },
     "runtimeVersion": "exposdk:50.0.2",
